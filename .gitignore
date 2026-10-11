@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Build products / artifacts
+Payload/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Ruby generator artifact (if installed locally)
+/vendor/bundle/

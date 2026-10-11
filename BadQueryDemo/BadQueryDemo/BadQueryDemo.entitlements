@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  PLACEHOLDER for Phase 2 (bad_query sandbox escape).
+
+	  Phase 1 does NOT use this file and it is intentionally NOT wired into
+	  CODE_SIGN_ENTITLEMENTS, so unsigned CI builds and free-Apple-ID sideloads
+	  work without any App Group provisioning.
+
+	  To enable it later:
+	    1. Register an App Group matching the identifier below in your
+	       Apple Developer account.
+	    2. Set CODE_SIGN_ENTITLEMENTS = BadQueryDemo/BadQueryDemo.entitlements
+	       in the target build settings.
+	    3. Re-sign with a provisioning profile that includes the group.
+	-->
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.example.demo_data</string>
+	</array>
+</dict>
+</plist>
